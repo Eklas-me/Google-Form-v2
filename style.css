@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
+html{
+	font-size: 62.5%;
+}
 body{
-    font-family: 'Roboto', sans-serif;
-    background: #091921;
+    font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+    background:#091921;  
 }
 body::before{
     content:'';
@@ -27,9 +29,8 @@ body::after{
     background: linear-gradient(#ffffff, #da00ff);
     clip-path: circle(20% at 70% 90%);
 }
-
 .fixed-width{
-    max-width: 1200px;
+    max-width: 120rem;
     margin: auto;
 }
 .text-center{
@@ -45,7 +46,6 @@ body::after{
     content:"";
     display: block;
     clear: both;
-    
 }
 .left{
     float: left;
@@ -53,97 +53,87 @@ body::after{
 .right{
     float: right;
 }
-
-
 /* Now google form design */
 .box{
-    margin-top: 100px;
-    height: 564px;
-    width: 500px;
+    height: 56.4rem;
+    width: 50rem;
+    margin: auto;
+    margin-top: 8.5rem;
+    border-radius: 1rem;
     position: relative;
     background: rgba(255,255,255,0.2);
-    margin: auto;
-    margin-top: 85px;
-    border-radius: 10px;
-    z-index: 10;
-    backdrop-filter: blur(15px);
-    border-top: 1px solid rgba(255,255,255,0.2);
-    border-left: 1px solid rgba(255,255,255,0.2);
-    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 .logo img{
-    width: 100px;
+    width: 10rem;
     height: auto;
-    margin-bottom: 20px;
-    margin-top: 50px;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
 }
 .content{
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 .content h2{
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    font-size: 2.4rem;
     font-weight: 500;
     line-height: 1.3333;
-    color: #fff;
+    color:#fff;
 }
 .content p{
     color: #fff;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 400;
     letter-spacing: .1px;
     line-height: 1.5;
-    padding: 10px;
-    margin-bottom: 5px;
+    padding: 1rem;
+    margin-bottom: .5rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 .form{
 
 }
 .form input{
-    width: 300px;
-    padding: 20px 100px 20px 20px;
-    font-size: 18px;
+    width: 30rem;
+    padding: 2rem 10rem 2rem 2rem;
+    font-size: 1.8rem;
     margin: auto;
     display: block;
     outline: none;
-    margin-bottom: 10px;
-    background: transparent;
-    border-radius: 5px;
-    color: #fff;
-    border-top: 1px solid rgba(255,255,255,0.5);
-    border-left: 1px solid rgba(255,255,255,0.5);
+    margin-bottom: 1rem;
+    background: #ddd;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
 }
 .text{
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 .text a{
     text-decoration: none;
-    font-family:'Roboto', sans-serif;;
-    font-size: inherit;
-    margin-bottom: 50px;
+    font-size: 1.8rem;
+    margin-bottom: 5rem;
     display: block;
-    margin-left: 40px;
-    color: #fff;
-    font-weight: 400;
+    margin-left: 4rem;
+    color: #1a73e8;
+    font-weight: 600;
     letter-spacing: 0.25px;
-
 }
 .text p{
-    margin-left: 40px;
+    margin-left: 4rem;
     color: #fff;
-    font-weight: 400;
-    
+    padding-bottom: .5rem;
+    font-size: 1.3rem;
 }
 .btn{}
-
 .btn-left a{
     float: left;
     text-decoration: none;
     display: block;
-    margin-left: 40px;
-    color: #fff;
-    margin-top: 10px;
+    margin-left: 4rem;
+    color: #1a73e8;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    font-weight: 600;
 }
 .btn-right a{
     float: right;
@@ -151,27 +141,29 @@ body::after{
     display: block;
     background:#1a73e8;
     color: #fff;
-    font-size: 15px;
-    padding: 10px 30px;
-    margin-right: 50px;
+    font-size: 1.9rem;
+    padding: 1rem 3rem;
+    margin-right: 5rem;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: .5rem;
 }
-
 /* Now footer */
 .footer{
-    width: 500px;
+    width: 50rem;
     height: auto;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 1.5rem;
+    position: relative;
+    z-index: 1;
 }
 .footer-left a{
     text-decoration: none;
     color: #fff;
-    font-size: 13px;
+    font-size: 1.3rem;
+    cursor: pointer;
 }
 .footer-left i{
-    margin-left: 5px;
+    margin-left: .5rem;
     color: #fff;
 }
 .footer-right ul{
@@ -184,7 +176,22 @@ body::after{
     display: block;
     text-decoration: none;
     color: #fff;
-    padding: 0px 15px;
-    font-size: 13px;
-    
+    padding: 0 1.5rem;
+    font-size: 1.3rem;
+}
+/*Responsiv Css*/
+@media(max-width:992px){
+	html{
+		font-size: 55%;
+	}
+}
+@media(max-width:768px){
+	html{
+		font-size: 45%;
+	}
+}
+@media(max-width:576px){
+	html{
+		font-size: 35%;
+	}
 }
